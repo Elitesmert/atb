@@ -27,14 +27,10 @@ const Navbar = () => {
     return (
         <div
             style={{ backgroundColor: `${color}` }}
-            className='fixed left-0 top-0 w-full z-10 ease-in duration-300'
+            className='left-0 top-0 w-full z-10 ease-in duration-300 sticky'
         >
-            <div className='max-w-[1280px] m-auto flex justify-between items-center p-4 text-white nav'>
-                <Link href='/'>
-                    <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>
-                        Captur
-                    </h1>
-                </Link>
+            <div className='z-10 max-w-[1280px] m-auto flex justify-center items-center p-4 text-white bg-orange-600 nav'>
+
                 <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
                     <li className='p-4'>
                         <Link href='/'>Home</Link>
@@ -45,8 +41,19 @@ const Navbar = () => {
                     <li className='p-4'>
                         <Link href='/work'>Work</Link>
                     </li>
+                    <li>
+                        <Link href='/'>
+                         <img src="/public/image/arma3.png" alt="" />
+                            {/* <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>
+                                Captur
+                            </h1> */}
+                        </Link>
+                    </li>
                     <li className='p-4'>
                         <Link href='/contact'>Contact</Link>
+                    </li>
+                    <li className='p-4'>
+                        <Link href='/login'>Login</Link>
                     </li>
                 </ul>
 
@@ -81,6 +88,7 @@ const Navbar = () => {
                         <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
                             <Link href='/contact'>Contact</Link>
                         </li>
+
                     </ul>
                 </div>
             </div>
