@@ -6,6 +6,14 @@
   src: url(../public/fonts/Impacted20-Regular.ttf);
 }
 
+$kirmizi-1: #ed1c24;
+$kirmizi-2: #be1e2d;
+$kirmizi-3: #e51c26;
+$mavi-1: #1f9dd9;
+$mavi-2: #336079;
+$mavi-3: #325c74;
+$siyah-1: #0a0b12;
+
 html,
 body {
   scroll-behavior: smooth;
@@ -32,6 +40,17 @@ a {
     color: white;
   }
 }
-
-.custom-img {
+.mobile-div {
+  li:hover {
+    background: linear-gradient(90deg, $mavi-1 0%, $mavi-1 25%, $kirmizi-1 75%, $kirmizi-1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.nav {
+  li:hover {
+    background: linear-gradient(90deg, $mavi-1 0%, $mavi-1 25%, $kirmizi-1 75%, $kirmizi-1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
