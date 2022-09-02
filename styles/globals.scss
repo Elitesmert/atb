@@ -13,6 +13,7 @@ $mavi-1: #1f9dd9;
 $mavi-2: #336079;
 $mavi-3: #325c74;
 $siyah-1: #0a0b12;
+$beyaz-1: #e3e3e3;
 
 html,
 body {
@@ -40,22 +41,29 @@ a {
     color: white;
   }
 }
-.mobile-div {
-  li:hover {
-    background: linear-gradient(90deg, $mavi-1 0%, $mavi-1 25%, $kirmizi-1 75%, $kirmizi-1 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
+
 .nav {
-  li:hover {
-    background: linear-gradient(90deg, $mavi-1 0%, $mavi-1 25%, $kirmizi-1 75%, $kirmizi-1 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  box-shadow: 0px 1px 15px 0px rgb(31, 157, 217, 0.7) inset;
+  .nav-ust {
+    a:hover {
+      background: linear-gradient(90deg, $mavi-1 0%, $kirmizi-1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .mobile-div {
+      a:hover {
+        background: linear-gradient(90deg, $mavi-1 0%, $mavi-1 40%, $kirmizi-1 60%, $kirmizi-1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      li {
+        border: solid $mavi-1;
+        box-shadow: 0px 1px 15px 0px $mavi-1 inset;
+      }
+    }
   }
 }
-.deneme{background-color: red;
-}
+
 /* scrollbar */
 /* width */
 ::-webkit-scrollbar {
@@ -64,12 +72,12 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(31, 157, 217,0.3);
+  background: rgb(31, 157, 217, 0.3);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(237, 28, 36,0.5);
+  background: rgb(237, 28, 36, 0.5);
   border-radius: 10px;
 }
 
