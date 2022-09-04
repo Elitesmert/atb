@@ -43,7 +43,7 @@ const Navbar = () => {
                     scrollNav
                         ? "z-10 flex justify-between sm:justify-center items-center p-4 text-[#e3e3e3] bg-gray-300/10 rounded-2xl ease-in duration-300 nav-ust"
                         : "z-10 flex justify-between sm:justify-center items-center p-4 text-[#e3e3e3] bg-gray-300/10 sm:rounded-2xl ease-in duration-300 nav-ust sm:border-0 border-b-2 border-[#1f9dd9]"
-                        
+
                 }
             >
                 <ul

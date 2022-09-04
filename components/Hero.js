@@ -1,16 +1,38 @@
+import Image from "next/image";
 import React from "react";
+import banner1 from "../public/image/arma3-banner-1.png"
+import banner2 from "../public/image/arma3.png"
+import Slider from "./Slider";
+import { SliderData } from '../components/SliderData'
 
-const Hero = ({ heading, message }) => {
+const Hero = () => {
     return (
-        <div className='z-0 flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img'>
-            {/* Overlay */}
-            <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/50 z-0' />
-            <div className='p-5 text-white z-[2]'>
-                <h2 className='text-5xl font-bold'>{heading}</h2>
-                <p className='py-5 text-xl'>{message}</p>
-                <button className='px-8 py-2 border'>LOOK</button>
+        <section className="overflow-hidden text-gray-700 ease-in duration-200 xl:mx-[15%] sm:mx-[10%] mx-5 sm:mt-20 mt-10">
+            <div className="container ease-in duration-200">
+                <div className="flex flex-wrap ease-in duration-200">
+                    <div className="flex flex-wrap sm:w-3/4 w-full ease-in duration-200">
+                        <div className="w-full ease-in duration-200 ">
+                            <Slider slides={SliderData} />
+                        </div>
+                    </div>
+                    <div className="flex sm:flex-wrap sm:w-1/4 w-full ease-in duration-200 carousel-indicators relative">
+                        <div className="w-full ease-in duration-200 basvuru-logo">
+                            <Image alt="gallery"
+                                layout="responsive"
+                                className="carousel-indicators"
+                                src={banner1} />
+                        </div>
+                        <div className="w-full ease-in duration-200 ">
+                            <Image alt="gallery"
+                                layout="responsive"
+                                src={banner2} />
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
+
 
     );
 };

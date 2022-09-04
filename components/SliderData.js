@@ -1,22 +1,22 @@
 export const SliderData = [
     {
         image:
-            'https://images.unsplash.com/photo-1535224206242-487f7090b5bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+            'https://steamuserimages-a.akamaihd.net/ugc/933802881612540017/8EE5A7C4F43AF6CC8FF70B126543DB37F2C202B8/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false',
     },
     {
         image:
-            'https://images.unsplash.com/photo-1469362102473-8622cfb973cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2419&q=80',
+            'https://steamuserimages-a.akamaihd.net/ugc/933802881608008903/2A6FB0AAF470A2E33AC389537A8D1D0A00A0619D/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"',
     },
     {
         image:
-            'https://images.unsplash.com/photo-1594717527389-a590b56e8d0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+            'https://steamuserimages-a.akamaihd.net/ugc/869618433872501524/F74DEDD3262A6C63233B254418DD5AA5131F1BD5/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false',
     },
     {
         image:
-            'https://images.unsplash.com/photo-1484591974057-265bb767ef71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+            'https://steamuserimages-a.akamaihd.net/ugc/919164171844498464/4EC1EF97CAA4C2FA0163C73C7E1A772EABCD438C/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false',
     },
     {
         image:
-            'https://images.unsplash.com/photo-1545917992-dea2d782ef46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2489&q=80',
+            'https://steamuserimages-a.akamaihd.net/ugc/844839188460765964/393B84F0F85298680D1B4B57265BAC063BB45510/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false',
     },
 ];

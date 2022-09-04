@@ -14,7 +14,8 @@ $mavi-2: #336079;
 $mavi-3: #325c74;
 $siyah-1: #0a0b12;
 $beyaz-1: #e3e3e3;
-
+$yesil-1: #94ca66;
+$yesil-1: #5b8c30;
 html,
 body {
   scroll-behavior: smooth;
@@ -84,4 +85,11 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(237, 27, 36);
+}
+.basvuru-logo {
+  img:hover {
+    filter: drop-shadow(-0.3rem 0rem 0.15rem #e51c26) drop-shadow(0.4rem 0rem 0.15rem #336079);
+    cursor: pointer;
+  }
+  
 }
