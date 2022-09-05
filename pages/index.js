@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Hero from '../components/Hero'
+import Video from '../components/Video'
 
 
 export default function Home() {
@@ -12,6 +13,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <Video />
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati molestiae reiciendis, est nobis eaque itaque? Distinctio, consectetur. Odit veniam quod cum recusandae, nisi magni consectetur doloremque numquam pariatur quia iure?
+      Reiciendis voluptatem, unde consequatur voluptatibus explicabo necessitatibus doloremque perspiciatis voluptatum laudantium odio, asperiores blanditiis. Iusto saepe odio harum consectetur eos nihil hic. Assumenda fuga nemo similique vero aperiam? Dicta, laudantium.
+      Eius earum, maiores explicabo tempora quae laboriosam placeat illo veniam sint, ipsam est quibusdam soluta enim iusto deleniti! Perferendis, cupiditate! Rerum impedit ipsa voluptates ratione atque iste nemo ex recusandae.
+      Ex itaque minus id eum quasi iusto atque tempora. Perferendis eius, facilis illo sunt, veniam ipsa porro impedit ea fugiat neque non tempora. Quam repellat perferendis commodi quis illum. Iure.
+      Molestias vitae nulla iure porro reprehenderit voluptatem, sint delectus similique praesentium, voluptates aut fugiat est laboriosam dolorum sed! Eligendi, quia ipsum? Voluptates magnam aperiam, pariatur ducimus quod animi! Incidunt, aperiam.
 
     </div>
   )

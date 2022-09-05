@@ -91,5 +91,60 @@ a {
     filter: drop-shadow(-0.3rem 0rem 0.15rem #e51c26) drop-shadow(0.4rem 0rem 0.15rem #336079);
     cursor: pointer;
   }
-  
+}
+.btnContainer {
+}
+
+.circle {
+  stroke: $kirmizi-1;
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+  -webkit-transition: all 0.5s ease-in-out;
+  opacity: 0.3;
+}
+
+.playBut {
+  // border: 1px solid red;
+  display: inline-block;
+  -webkit-transition: all 0.5s ease;
+
+  .triangle {
+    -webkit-transition: all 0.7s ease-in-out;
+    stroke-dasharray: 240;
+    stroke-dashoffset: 480;
+    stroke: #fff;
+    transform: translateY(0);
+  }
+
+  &:hover {
+    .triangle {
+      stroke-dashoffset: 0;
+      opacity: 1;
+      stroke: $mavi-1;
+      animation: nudge 0.7s ease-in-out;
+
+      @keyframes nudge {
+        0% {
+          transform: translateX(0);
+        }
+        30% {
+          transform: translateX(-5px);
+        }
+        50% {
+          transform: translateX(5px);
+        }
+        70% {
+          transform: translateX(-2px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    }
+
+    .circle {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
 }
