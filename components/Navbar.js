@@ -42,13 +42,13 @@ const Navbar = () => {
                 className={
                     scrollNav
                         ? "z-10 flex justify-between sm:justify-center items-center p-4 text-[#e3e3e3] bg-gray-300/10 rounded-2xl ease-in duration-300 nav-ust"
-                        : "z-10 flex justify-between sm:justify-center items-center p-4 text-[#e3e3e3] bg-gray-300/10 sm:rounded-2xl ease-in duration-300 nav-ust sm:border-0 border-b-2 border-[#1f9dd9]"
+                        : "z-10 flex justify-between sm:justify-center items-center p-4 text-[#e3e3e3] bg-gray-300/10 sm:rounded-2xl ease-in duration-300 nav-ust sm:border-0 border-[#1f9dd9] border-b-2"
 
                 }
             >
                 <ul
                     style={{ color: `${textColor}` }}
-                    className="hidden sm:flex sm:text-[14px] md:text-[16px] lg:text-[20px] xl:text-[22px] 2xl:text-[26px] w-full justify-between  lg:mx-6 md:mx-4"
+                    className="hidden sm:flex sm:text-[14px] md:text-[16px] lg:text-[20px] xl:text-[22px] 2xl:text-[26px] w-full justify-between  lg:mx-6 md:mx-4 "
                 >
                     <li className="py-2">
                         <Link href="/">ANASAYFA</Link>
@@ -112,8 +112,8 @@ const Navbar = () => {
                 <div
                     className={
                         nav
-                            ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 mt-[140px] flex w-full h-screen  text-center ease-in duration-300 mobile-div"
-                            : "sm:hidden absolute left-[-120%] mt-[140px] top-0  right-0 bottom-0 flex w-full h-screen  text-center ease-in duration-300 mobile-div"
+                            ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 mt-[140px] flex w-full h-screen  text-center mobile-div duration-500 transform-[scale(1.08)] transition-all"
+                            : "sm:hidden absolute left-[-120%] mt-[140px] top-0  right-0 bottom-0 flex w-full h-screen  text-center mobile-div duration-500 transform-[scale(1.08)] transition-all"
                     }
                 >
                     <ul className="w-full ">
@@ -121,8 +121,8 @@ const Navbar = () => {
                             onClick={handleNav}
                             className={
                                 scrollNav
-                                    ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] ease-in duration-300 flex justify-center"
-                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center"
+                                    ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] duration-500 transform-[scale(1.08)] transition-all flex justify-center select-none"
+                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center select-none"
                             }
                         >
                             <Link href="/">
