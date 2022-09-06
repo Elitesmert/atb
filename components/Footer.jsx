@@ -21,8 +21,7 @@ const Footer = () => {
                         Anasayfa
                     </Link>
                     <Link href="/#video">Galeri</Link>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform" target="_blank" rel="noreferrer">
-
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform" target="_blank" rel="noreferrer noopener ">
                         Başvuru
                     </a>
                     <Link href="/">Giriş</Link>
@@ -69,18 +68,7 @@ const Footer = () => {
                 </p>
 
                 <div className="footer-icons">
-                    <Link href="#" className="mx-1 rounded-[5px]">
 
-                    </Link>
-                    <Link href="#" className="mx-1 rounded-[5px]">
-
-                    </Link>
-                    <Link href="#" className="mx-1 rounded-[5px]">
-
-                    </Link>
-                    <Link href="#" className="mx-1 rounded-[5px]">
-
-                    </Link>
                 </div>
             </div>
         </footer>

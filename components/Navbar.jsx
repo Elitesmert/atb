@@ -71,7 +71,7 @@ const Navbar = () => {
                     </li>
                     <li className="p-2">
 
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform" target="_blank" rel="noreferrer">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform" target="_blank" rel="noreferrer noopener ">
 
                             BASVURU
                         </a>
@@ -179,7 +179,7 @@ const Navbar = () => {
                             }
                         >
 
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform" target="_blank" className="w-full h-full p-4 rounded-[50px]" rel="noreferrer">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform" target="_blank" className="w-full h-full p-4 rounded-[50px]" rel="noreferrer noopener ">
 
 
 
