@@ -57,7 +57,7 @@ const Navbar = () => {
                         <Link href="/#video">GALERI</Link>
                     </li>
                     <li className="p-2 text-center">
-                        <Link href="/work">BIZ KIMIZ</Link>
+                        {/* <Link href="/work">BIZ KIMIZ</Link> */}
                     </li>
                     <li className="px-16 flex justify-center text-center">
                         <div className="absolute lg:w-36 md:w-32 sm:w-28 -top-[10px]">
