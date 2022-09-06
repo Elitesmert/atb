@@ -19,7 +19,7 @@ const Hero = () => {
                         <div className="w-full ease-in duration-200 basvuru-logo">
                             <a
                                 href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform"
-                                target="_blank"
+                                target="_blank " rel="noreferrer"
                             >
                                 <Image
                                     alt="gallery"
