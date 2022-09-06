@@ -54,10 +54,10 @@ const Navbar = () => {
                         <Link href="/">ANASAYFA</Link>
                     </li>
                     <li className="p-2">
-                        <Link href="/#gallery">GALERI</Link>
+                        <Link href="/#video">GALERI</Link>
                     </li>
                     <li className="p-2 text-center">
-                        <Link href="/work">BIZ KIMIZ</Link>
+                        {/* <Link href="/work">BIZ KIMIZ</Link> */}
                     </li>
                     <li className="px-16 flex justify-center text-center">
                         <div className="absolute lg:w-36 md:w-32 sm:w-28 -top-[10px]">
@@ -67,13 +67,18 @@ const Navbar = () => {
                         </div>
                     </li>
                     <li className="p-2">
-                        <Link href="/contact">KADROMUZ</Link>
+                        {/* <Link href="/contact">KADROMUZ</Link> */}
                     </li>
                     <li className="p-2">
-                        <Link href="/login">BASVURU</Link>
+
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform" target="_blank">
+
+                            BASVURU
+                        </a>
+
                     </li>
                     <li className="p-2 ">
-                        <Link href="/login">GIRIS</Link>
+                        <Link href="/">GIRIS</Link>
                     </li>
                 </ul>
 
@@ -137,7 +142,7 @@ const Navbar = () => {
                                     : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center"
                             }
                         >
-                            <Link href="/#gallery">
+                            <Link href="/#video">
                                 <a className="w-full h-full p-4 rounded-[50px]">GALERI</a>
                             </Link>
                         </li>
@@ -145,11 +150,11 @@ const Navbar = () => {
                             onClick={handleNav}
                             className={
                                 scrollNav
-                                    ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] ease-in duration-300 flex justify-center"
-                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center"
+                                    ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] ease-in duration-300 hidden justify-center"
+                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 hidden justify-center"
                             }
                         >
-                            <Link href="/work">
+                            <Link href="/">
                                 <a className="w-full h-full p-4 rounded-[50px]">BIZ KIMIZ</a>
                             </Link>
                         </li>
@@ -157,11 +162,11 @@ const Navbar = () => {
                             onClick={handleNav}
                             className={
                                 scrollNav
-                                    ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] ease-in duration-300 flex justify-center"
-                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center"
+                                    ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] ease-in duration-300 hidden justify-center "
+                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 hidden justify-center"
                             }
                         >
-                            <Link href="/contact">
+                            <Link href="/">
                                 <a className="w-full h-full p-4 rounded-[50px]">KADROMUZ</a>
                             </Link>
                         </li>
@@ -173,9 +178,13 @@ const Navbar = () => {
                                     : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center"
                             }
                         >
-                            <Link href="/contact">
-                                <a className="w-full h-full p-4 rounded-[50px]">BASVURU</a>
-                            </Link>
+
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform" target="_blank" className="w-full h-full p-4 rounded-[50px]">
+
+
+
+                                BASVURU
+                            </a>
                         </li>
                         <li
                             onClick={handleNav}
@@ -185,7 +194,7 @@ const Navbar = () => {
                                     : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center"
                             }
                         >
-                            <Link href="/contact">
+                            <Link href="/">
                                 <a className="w-full h-full p-4 rounded-[50px]">GIRIS</a>
                             </Link>
                         </li>
