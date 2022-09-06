@@ -22,7 +22,7 @@ const Footer = () => {
                         Anasayfa
                     </Link>
                     <Link href="/#video">Galeri</Link>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform" target="_blank">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform" target="_blank" rel="noreferrer">
 
                         Başvuru
                     </a>

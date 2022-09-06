@@ -20,6 +20,7 @@ html,
 body {
   scroll-behavior: smooth;
   padding: 0;
+  height: 100vh;
   margin: 0;
   background-image: url("../public/image/background.jpg");
   font-family: Imported;
@@ -160,10 +161,9 @@ a {
   padding: 20px 50px;
 }
 
-.footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right {
-  display: inline-block;
+  display: none;
   vertical-align: top;
 }
 
@@ -202,7 +202,7 @@ a {
 }
 
 .footer-distributed .footer-company-name {
-  color: #222;
+  color: rgb(149, 149, 149);
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -350,6 +350,10 @@ a {
     width: 100%;
     margin-bottom: 40px;
     text-align: center;
+  }
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: none;
   }
 
   .footer-distributed .footer-center i {
