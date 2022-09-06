@@ -6,6 +6,7 @@ const nextConfig = {
 
 module.exports = {
   images: {
+    pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
     domains: ['steamuserimages-a.akamaihd.net']
   }
 }
