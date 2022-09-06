@@ -1,6 +1,8 @@
 import Link from "next/link"
 import React from "react"
-import { GrMapLocation, GrPhone, GrMailOption } from "react-icons/gr"
+import { GrMapLocation } from "react-icons/gr"
+import { GrPhone } from "react-icons/gr"
+import { GrMailOption } from "react-icons/gr"
 import atb from "../public/image/arma.png"
 import Image from "next/image"
 
