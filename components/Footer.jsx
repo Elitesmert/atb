@@ -40,7 +40,7 @@ const Footer = () => {
                             <hr className="ml-2 mr-auto w-[100px] border-[2px] rounded border-[rgba(51,96,121,0.4)]" />
                         </div>
                         <p>
-                          
+
                         </p>
                     </div>
                     <div className="orta sm:mr-8">
@@ -48,7 +48,7 @@ const Footer = () => {
                             <h6 className="font-semibold ml-1">Kullanışlı Bağlantılar</h6>
                             <hr className="ml-2 mr-auto w-[100px] border-[2px] rounded border-[rgba(51,96,121,0.4)]" />
                         </div>
-                        <div className="flex flex-col ">
+                        <div className="flex sm:flex-col justify-center">
                             <Link href="/">
                                 <a className="mx-2 px-2 my-1 hover:bg-slate-500/50 hover:rounded ease-in-out transition-all duration-200">Anasayfa</a>
                             </Link>
