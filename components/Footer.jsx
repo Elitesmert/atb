@@ -40,10 +40,7 @@ const Footer = () => {
                             <hr className="ml-2 mr-auto w-[100px] border-[2px] rounded border-[rgba(51,96,121,0.4)]" />
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-                            autem cum? Est porro nesciunt maiores doloribus iste a excepturi
-                            repellat facere deserunt vero distinctio dolore nihil rerum modi,
-                            libero minima.
+                          
                         </p>
                     </div>
                     <div className="orta sm:mr-8">
@@ -68,10 +65,10 @@ const Footer = () => {
                             <h6 className="font-semibold ml-1">İletişim</h6>
                             <hr className="ml-2 mr-auto w-[100px] border-[2px] rounded border-[rgba(51,96,121,0.4)]" />
                         </div>
-                        <div className="flex items-center mx-2 my-4">
+                        {/* <div className="flex items-center mx-2 my-4">
                             <HiPhone size={20} />
                             <a href="" className="ml-2">telefon numarası eklenicek</a>
-                        </div>
+                        </div> */}
                         <div className="flex items-center mx-2 my-4">
                             <HiMail size={20} />
                             <a href="mailto:armaturkbirlikleri@gmail.com" className="ml-2">armaturkbirlikleri@gmail.com</a>
@@ -88,68 +85,6 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
-        // <footer className="footer-distributed">
-        //     <div className="footer-left">
-        //         <Link href="/">
-        //             <Image src={atb} alt="arma" objectFit="cover" width={100} height={100} />
-        //         </Link>
-
-        //         <p className="footer-links">
-        //             <Link href="/" className="link-1">
-        //                 Anasayfa
-        //             </Link>
-        //             <Link href="/#video">Galeri</Link>
-        //             <a href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform" target="_blank" rel="noreferrer noopener ">
-        //                 Başvuru
-        //             </a>
-        //             <Link href="/">Giriş</Link>
-
-        //         </p>
-
-        //         <p className="footer-company-name">
-        //             <span>Arma Türk Birlikleri</span> &copy; {new Date().getFullYear()}
-        //         </p>
-        //     </div>
-
-        //     <div className="footer-center">
-        //         <div>
-        //             <div className="footer-center-icon-box mr-2">
-        //                 <GrMapLocation />
-        //             </div>
-        //             <p>
-        //                 <span>444 S. Cedros Ave</span> Solana Beach, California
-        //             </p>
-        //         </div>
-
-        //         <div>
-        //             <div className="footer-center-icon-box mr-2">
-        //                 <GrPhone />
-        //             </div>
-        //             <p>+1.555.555.5555</p>
-        //         </div>
-
-        //         <div>
-        //             <div className="footer-center-icon-box mr-2">
-        //                 <GrMailOption className="" />
-        //             </div>
-        //             <p>
-        //                 <a href="mailhref:support@company.com">support@company.com</a>
-        //             </p>
-        //         </div>
-        //     </div>
-
-        //     <div className="footer-right">
-        //         <p className="footer-company-about">
-        //             <span>Şirketimiz Hakkında</span>
-        //             Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
-        //             euismod convallis velit, eu auchrefr lacus vehicula sit amet.
-        //         </p>
-
-        //         <div className="footer-icons">
-
-        //         </div>
-        //     </div>
-        // </footer>
     )
 }
 
