@@ -3,12 +3,16 @@ import Link from "next/link"
 import { IoMenu, IoLogoXing } from "react-icons/io5"
 import Image from "next/image"
 import atb from "../public/image/arma.png"
+import { useAuth } from "./AuthContext"
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const [scrollNav, setScrollNav] = useState(false)
     const [color, setColor] = useState("transparent")
     const [textColor, setTextColor] = useState("white")
+
+    const { logout } = useAuth()
+    const { currentUser } = useAuth()
 
     const handleNav = () => {
         setNav(!nav)
@@ -78,7 +82,11 @@ const Navbar = () => {
 
                     </li>
                     <li className="p-2 ">
-                        <Link href="/">GIRIS</Link>
+                        <Link href="/login" >
+                            <a onClick={logout}>
+                                GIRIS
+                            </a>
+                        </Link>
                     </li>
                 </ul>
 

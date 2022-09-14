@@ -69,7 +69,7 @@ const Footer = () => {
                             <HiPhone size={20} />
                             <a href="" className="ml-2">telefon numarası eklenicek</a>
                         </div> */}
-                        <div className="flex items-center mx-2 my-4">
+                        <div className="flex items-center mx-2 my-4 sm:justify-start justify-center">
                             <HiMail size={20} />
                             <a href="mailto:armaturkbirlikleri@gmail.com" className="ml-2">armaturkbirlikleri@gmail.com</a>
                         </div>

@@ -1,13 +1,20 @@
 import React from 'react'
+import { AuthProvider } from '../../components/AuthContext';
+import Login from "../../components/Login";
+import { useAuth } from "../../components/AuthContext"
+import Dashboard from '../../components/Dashboard';
 
-const Login = () => {
+export default function Home() {
+
+  const { currentUser } = useAuth();
+
+
+
   return (
-    <div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odit hic dolorem corporis aperiam illo laboriosam architecto, veniam pariatur quasi consectetur voluptate, repudiandae commodi voluptatum ut alias. Nostrum, nisi repudiandae.
-      </div>
-    </div>
+    <>
+      {!currentUser && <Login />}
+      {currentUser && <Dashboard />}
+    </>
+
   )
 }
-
-export default Login;
