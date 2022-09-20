@@ -11,10 +11,10 @@ export default function Home() {
 
 
   return (
-    <>
+    <div className='h-screen'>
       {!currentUser && <Login />}
       {currentUser && <Dashboard />}
-    </>
+    </div>
 
   )
 }

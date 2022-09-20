@@ -162,3 +162,45 @@ footer {
     }
   }
 }
+
+/*------------------------------------- LOGIN ----------------------------*/
+
+.login-text {
+  font-family: Montserrat;
+  font-weight: 600;
+}
+
+.back-animasyon::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 800px;
+  height: 500px;
+  background: linear-gradient(0deg, transparent, $mavi-2, $mavi-2);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.back-animasyon {
+  a {
+    font-family: Montserrat;
+  }
+  input {
+    font-family: Montserrat;
+  }
+  label:focus-within {
+    border: double 2px transparent;
+    background-image: linear-gradient(white, white), linear-gradient(to right, $mavi-1, $kirmizi-1);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+}

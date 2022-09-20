@@ -1,15 +1,20 @@
+import Image from "next/image"
 import React, { useState } from "react"
 import { useAuth } from "./AuthContext"
+import atb from "../public/image/arma.png"
+import Input from "./Input"
+import Link from "next/link"
 
 const Login = () => {
-
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [error, setError] = useState(null)
     const [isLoggingIn, setIsLoggingIn] = useState(true)
 
+
     const { login, signup, currentUser } = useAuth()
     console.log(currentUser)
+    const enable = email && password
 
     async function submitHandler() {
         if (!email || !password) {
@@ -28,44 +33,68 @@ const Login = () => {
     }
 
     return (
-        <div className="flex-1 text-xs sm:text-sm flex flex-col justify-center items-center gap-2 sm:gap-4 mt-20">
-            <h1 className="font-extrabold select-none text-2xl sm:text-4xl uppercase">
-                {isLoggingIn ? "Login" : "register"}
-            </h1>
-            {error && (
-                <div className="w-full max-w-[40ch] border-rose-400 border text-center border-solid text-rose-400 py-2">
-                    {error}
+        <div className="flex items-center justify-center mt-20">
+            <div
+                className=" w-[800px] h-[500px]  rounded-[8px] relative overflow-hidden back-animasyon
+            before:absolute before:w-[800px] before:h-[500px] before:bg-gradient-to-b before:from-kirmizi2 before:via-kirmizi2 before:to-transparent before:animate-[don_6s_linear_infinite] before:-top-[50%] before:-left-[50%] before:origin-bottom-right"
+            >
+
+                <div className=" bg-[#1b1b1b] absolute z-[1] flex inset-1 rounded-[8px] ">
+
+                    <div className=" flex items-center z-[2] w-96 justify-center">
+                        <Image
+                            src={atb}
+                            alt="arma"
+                            width={200}
+                            height={200}
+                            objectFit="cover"
+                        />
+                    </div>
+
+                    <div className="w-[1px] bg-black"></div>
+
+                    <div className="w-full inset-1 flex flex-col justify-center z-[2] px-10">
+                        <div className="grid gap-y-10 relative">
+
+                            {error && <div className="absolute w-full flex justify-center -top-16">
+                                <div className='w-full max-w-[40ch] border-rose-400 border text-center border-solid text-rose-400 py-2'>{error}</div>
+                            </div>
+                            }
+
+                            <Input
+                                type="text"
+                                value={email}
+                                onChange={e => setEmail(e.target.value)}
+                                label="E-posta"
+                            />
+                            <Input
+                                type="password"
+                                value={password}
+                                onChange={e => setPassword(e.target.value)}
+                                label="sifre"
+                            />
+                            <button
+                                type="submit"
+                                disabled={!enable}
+                                onClick={submitHandler}
+                                className="h-[38px] bg-mavi2 text-white rounded disabled:opacity-20"
+                            >
+                                Giris Yap
+                            </button>
+
+                            <Link href="./login" >
+                                <a className="flex justify-center items-center text-mavi1 font-semibold">
+                                    Şifremi Unuttum?
+                                </a>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
-            )}
-            <input
-                type="text"
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-                placeholder="Email Address"
-                className="outline-none duration-300 border-b-2 border-solid border-white focus:border-cyan-300 text-slate-900 p-2 w-full max-w-[40ch]"
-            />
-            <input
-                value={password}
-                onChange={e => setPassword(e.target.value)}
-                type="password"
-                placeholder="Password"
-                className="outline-none text-slate-900 p-2 w-full max-w-[40ch] duration-300 border-b-2 border-solid border-white focus:border-cyan-300"
-            />
-            <button
-                onClick={submitHandler}
-                className="w-full max-w-[40ch] border border-white border-solid uppercase py-2 duration-300 relative after:absolute after:top-0 after:right-full after:bg-white after:z-10 after:w-full after:h-full overflow-hidden hover:after:translate-x-full after:duration-300 hover:text-slate-900"
-            >
-                <h2 className="relative z-20">SUBMIT</h2>
-            </button>
-            <h2
-                className="duration-300 hover:scale-110 cursor-pointer"
-                onClick={() => setIsLoggingIn(!isLoggingIn)}
-            >
-                {!isLoggingIn ? "Login" : "Register"}
-            </h2>
+            </div>
         </div>
+
+
     )
 }
-
 
 export default Login
