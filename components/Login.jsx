@@ -1,9 +1,9 @@
 import Image from "next/image"
 import React, { useState } from "react"
-import { useAuth } from "./AuthContext"
 import atb from "../public/image/arma.png"
 import Input from "./Input"
 import Link from "next/link"
+import { useAuth } from "./AuthContext"
 
 const Login = () => {
     const [email, setEmail] = useState("")
@@ -12,24 +12,22 @@ const Login = () => {
     const [isLoggingIn, setIsLoggingIn] = useState(true)
 
 
-    const { login, signup, currentUser } = useAuth()
-    console.log(currentUser)
+    const { login, currentUser } = useAuth()
+
     const enable = email && password
 
     async function submitHandler() {
         if (!email || !password) {
-            setError("Please enter email and password")
             return
         }
         if (isLoggingIn) {
             try {
                 await login(email, password)
             } catch (err) {
-                setError("Incorrect email or password")
+                setError("Yanlis kullanici adi veya sifre")
             }
             return
         }
-        await signup(email, password)
     }
 
     return (
@@ -82,7 +80,7 @@ const Login = () => {
                                 Giris Yap
                             </button>
 
-                            <Link href="./login" >
+                            <Link href="./profile" >
                                 <a className="flex justify-center items-center text-mavi1 font-semibold">
                                     Şifremi Unuttum?
                                 </a>

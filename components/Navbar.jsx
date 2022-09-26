@@ -11,8 +11,9 @@ const Navbar = () => {
     const [color, setColor] = useState("transparent")
     const [textColor, setTextColor] = useState("white")
 
-    const { logout } = useAuth()
     const { currentUser } = useAuth()
+
+
 
     const handleNav = () => {
         setNav(!nav)
@@ -58,14 +59,14 @@ const Navbar = () => {
                         <Link href="/">ANASAYFA</Link>
                     </li>
                     <li className="p-2">
-                        <Link href="/#video">GALERI</Link>
+                        <Link href="/#video" >GALERI</Link>
                     </li>
                     <li className="p-2 text-center">
                         {/* <Link href="/work">BIZ KIMIZ</Link> */}
                     </li>
                     <li className="px-16 flex justify-center text-center">
                         <div className="absolute lg:w-36 md:w-32 sm:w-28 -top-[10px]">
-                            <Link href="/login">
+                            <Link href="/">
                                 <Image src={atb} alt="arma" objectFit="cover" />
                             </Link>
                         </div>
@@ -82,15 +83,17 @@ const Navbar = () => {
 
                     </li>
                     <li className="p-2 ">
-                        <Link href="/login" >
-                            <a onClick={logout}>
-                                GIRIS
+                        <Link href="/profile" >
+                            <a>
+                                {!currentUser && " Giris"}
+                                {currentUser && "Hesap"}
                             </a>
                         </Link>
                     </li>
                 </ul>
 
-                {/* Mobile Button */}
+                {/*//! -------------------------------Mobile------------------------------------- */}
+
                 <div className="sm:hidden h-20">
                     <div
                         className={
@@ -99,12 +102,12 @@ const Navbar = () => {
                                 : "absolute w-36 top-0 ease-in duration-300"
                         }
                     >
-                        <Link href="/login">
+                        <Link href="/">
                             <Image src={atb} alt="arma" objectFit="cover" />
                         </Link>
                     </div>
                 </div>
-                <div onClick={handleNav} className="block sm:hidden z-10">
+                <div onClick={handleNav} className="block sm:hidden z-10 duration-300 cursor-pointer hover:scale-125">
                     {nav ? (
                         <IoLogoXing
                             size={30}
@@ -146,8 +149,8 @@ const Navbar = () => {
                             onClick={handleNav}
                             className={
                                 scrollNav
-                                    ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] ease-in duration-300 flex justify-center"
-                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center"
+                                    ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] duration-500 transform-[scale(1.08)] transition-all flex justify-center select-none"
+                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center select-none"
                             }
                         >
                             <Link href="/#video">
@@ -170,8 +173,8 @@ const Navbar = () => {
                             onClick={handleNav}
                             className={
                                 scrollNav
-                                    ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] ease-in duration-300 hidden justify-center "
-                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 hidden justify-center"
+                                    ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] duration-500 transform-[scale(1.08)] transition-all flex justify-center select-none"
+                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center select-none"
                             }
                         >
                             <Link href="/">
@@ -182,15 +185,12 @@ const Navbar = () => {
                             onClick={handleNav}
                             className={
                                 scrollNav
-                                    ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] ease-in duration-300 flex justify-center"
-                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center"
+                                    ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] duration-500 transform-[scale(1.08)] transition-all flex justify-center select-none"
+                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center select-none"
                             }
                         >
 
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform" target="_blank" className="w-full h-full p-4 rounded-[50px]" rel="noreferrer noopener ">
-
-
-
                                 BASVURU
                             </a>
                         </li>
@@ -198,12 +198,13 @@ const Navbar = () => {
                             onClick={handleNav}
                             className={
                                 scrollNav
-                                    ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] ease-in duration-300 flex justify-center"
-                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center"
+                                    ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] duration-500 transform-[scale(1.08)] transition-all flex justify-center select-none"
+                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center select-none"
                             }
                         >
-                            <Link href="/">
-                                <a className="w-full h-full p-4 rounded-[50px]">GIRIS</a>
+                            <Link href="/profile">
+                                <a className="w-full h-full p-4 rounded-[50px]">{!currentUser && " Giris"}
+                                    {currentUser && "Hesap"}</a>
                             </Link>
                         </li>
                     </ul>

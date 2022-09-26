@@ -1,13 +1,12 @@
 import React from 'react'
-import { AuthProvider } from '../../components/AuthContext';
-import Login from "../../components/Login";
 import { useAuth } from "../../components/AuthContext"
 import Dashboard from '../../components/Dashboard';
+import Login from '../../components/Login';
 
-export default function Home() {
+export default function Profile() {
 
   const { currentUser } = useAuth();
-
+  
 
 
   return (

@@ -7,11 +7,9 @@ import '../styles/globals.scss'
 function MyApp({ Component, pageProps }) {
   return (
     <AuthProvider>
-      <>
         <Navbar />
         <Component {...pageProps} />
         <Footer />
-      </>
     </AuthProvider>
 
   )
