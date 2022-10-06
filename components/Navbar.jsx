@@ -61,7 +61,7 @@ const Navbar = () => {
                     <li className="p-2">
                         <Link href="/#video" >GALERI</Link>
                     </li>
-                    <li className="p-2 text-center">
+                    <li className="p-2 text-center hidden">
                         {/* <Link href="/work">BIZ KIMIZ</Link> */}
                     </li>
                     <li className="px-16 flex justify-center text-center">
@@ -71,7 +71,7 @@ const Navbar = () => {
                             </Link>
                         </div>
                     </li>
-                    <li className="p-2">
+                    <li className="p-2 hidden">
                         {/* <Link href="/contact">KADROMUZ</Link> */}
                     </li>
                     <li className="p-2">

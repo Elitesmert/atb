@@ -4,7 +4,6 @@ import { ImExit } from "react-icons/im"
 import { db } from "../config/firebase"
 import { addDoc, collection, getDocs, setDoc } from "firebase/firestore"
 import Table from "./Table"
-import { async } from "@firebase/util"
 import RankCard from "./RankCard"
 
 const Dashboard = () => {
