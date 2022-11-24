@@ -3,7 +3,7 @@ import React from "react"
 import { GrMapLocation } from "react-icons/gr"
 import { GrPhone } from "react-icons/gr"
 import { GrMailOption } from "react-icons/gr"
-import { FaYoutube, FaFacebookSquare } from "react-icons/fa"
+import { FaYoutube, FaFacebookSquare, FaTwitch } from "react-icons/fa"
 import { HiPhone, HiMail } from "react-icons/hi"
 import atb from "../public/image/arma.png"
 import Image from "next/image"
@@ -30,6 +30,13 @@ const Footer = () => {
                             rel="noreferrer noopener"
                         >
                             <FaYoutube size={20} className="mr-4" />
+                        </a>
+                        <a
+                            href="https://www.twitch.tv/atbarma3"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+                            <FaTwitch size={20} className="mr-4" />
                         </a>
                     </div>
                 </div>

@@ -198,7 +198,7 @@ footer {
   input {
     font-family: Montserrat;
   }
-  label:focus-within{
+  label:focus-within {
     border: double 3px transparent;
     border-radius: 6px;
     background-image: linear-gradient(white, white), linear-gradient(to right, $mavi-1, $kirmizi-1);

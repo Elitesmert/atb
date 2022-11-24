@@ -3,7 +3,7 @@ import React from "react"
 import banner1 from "../public/image/arma3-banner-1.png"
 import banner2 from "../public/image/arma3.png"
 import Slider from "./Slider"
-import { FaYoutube, FaFacebookSquare } from "react-icons/fa"
+import { FaYoutube, FaFacebookSquare, FaTwitch } from "react-icons/fa"
 import { SliderData } from "./SliderData"
 
 const Hero = () => {
@@ -22,7 +22,7 @@ const Hero = () => {
                                 href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform"
                                 target="_blank "
                                 rel="noreferrer noopener "
-                                
+
                             >
                                 <Image
                                     alt="gallery"
@@ -42,6 +42,17 @@ const Hero = () => {
                                         className="flex w-full items-center justify-center flex-col text-[#3A559F] hover:text-[#1178F2] hover:bg-slate-500/50 hover:rounded ease-in-out transition-all duration-200"
                                     >
                                         <FaFacebookSquare size={30} className="" />
+                                        <div className="text-xl">Arma Turk Birlikleri</div>
+                                    </a>
+                                </div>
+                                <div className=" h-full flex items-center w-full ">
+                                    <a
+                                        href="https://www.twitch.tv/atbarma3"
+                                        target="_blank"
+                                        rel="noreferrer noopener"
+                                        className="flex w-full items-center justify-center flex-col  text-[#895bce] hover:text-[#A970FF] hover:bg-slate-500/50 hover:rounded ease-in-out transition-all duration-200"
+                                    >
+                                        <FaTwitch size={30} />
                                         <div className="text-xl">Arma Turk Birlikleri</div>
                                     </a>
                                 </div>

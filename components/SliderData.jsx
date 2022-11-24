@@ -5,6 +5,10 @@ export const SliderData = [
     },
     {
         image:
+            'https://cdn.discordapp.com/attachments/231458135540367360/1031314113135136818/20221016214903_1.jpg',
+    },
+    {
+        image:
             'https://steamuserimages-a.akamaihd.net/ugc/933802881612540017/8EE5A7C4F43AF6CC8FF70B126543DB37F2C202B8/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false',
     },
     {

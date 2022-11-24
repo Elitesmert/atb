@@ -53,7 +53,7 @@ const Navbar = () => {
             >
                 <ul
                     style={{ color: `${textColor}` }}
-                    className="hidden sm:flex sm:text-[14px] md:text-[16px] lg:text-[20px] xl:text-[22px] 2xl:text-[26px] w-full justify-between  lg:mx-6 md:mx-4 "
+                    className="hidden sm:flex sm:text-[14px] md:text-[16px] lg:text-[20px] xl:text-[22px] 2xl:text-[26px] w-full justify-between lg:mx-6 md:mx-4"
                 >
                     <li className="py-2">
                         <Link href="/">ANASAYFA</Link>
@@ -77,8 +77,9 @@ const Navbar = () => {
                     <li className="p-2">
 
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSd85CP6VX77vAO_kv8PWzV1Y2pqLWHkMGP3dal-DA_xr6ptgQ/viewform" target="_blank" rel="noreferrer noopener ">
-
+                        
                             BASVURU
+                        
                         </a>
 
                     </li>
@@ -174,7 +175,7 @@ const Navbar = () => {
                             className={
                                 scrollNav
                                     ? "bg-[rgb(51,96,121,0.5)] text-4xl my-2 rounded-[50px] duration-500 transform-[scale(1.08)] transition-all flex justify-center select-none"
-                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 flex justify-center select-none"
+                                    : "bg-[rgb(51,96,121,0.5)] ease-in duration-300 text-4xl my-2 justify-center select-none hidden"
                             }
                         >
                             <Link href="/">

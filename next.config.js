@@ -6,6 +6,6 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: ['steamuserimages-a.akamaihd.net']
+    domains: ['steamuserimages-a.akamaihd.net', "cdn.discordapp.com"]
   }
 }
